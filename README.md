@@ -6,7 +6,7 @@ Docker](https://curriculeon.github.io/Curriculeon/lectures/containerization/dock
 	* docker-cli
 	* docker-machine
 	* docker-desktop
-2. [Containerize a Jar](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/installation/content.html)
+2. [Containerize a Jar](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/containerizing-jars/content.html)
 3. [SSH Into Docker Container](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/ssh-into-container/content.html)
 
 
