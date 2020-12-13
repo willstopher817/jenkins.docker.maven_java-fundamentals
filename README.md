@@ -1,13 +1,16 @@
 ### Part 1 - Install And Use Docker
-1. [Install
+1. [Install Git Command Line Interface](https://curriculeon.github.io/Curriculeon/lectures/version-control-systems/git/installation/content.html)
+2. [Install Java](https://curriculeon.github.io/Curriculeon/lectures/java/installation/content.html)
+3. [Install Maven](https://curriculeon.github.io/Curriculeon/lectures/java/build-automation/maven/installation/content.html)
+4. [Install
 Docker](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/installation/content.html)
 	* Installation of the following services:
 	* virtualbox
 	* docker-cli
 	* docker-machine
 	* docker-desktop
-2. [Containerize a Jar](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/containerizing-jars/content.html)
-3. [SSH Into Docker Container](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/ssh-into-container/content.html)
+5. [Containerize a Jar](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/containerizing-jars/content.html)
+6. [SSH Into Docker Container](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/ssh-into-container/content.html)
 
 
 ### Part 2 - Install And Configure Jenkins
