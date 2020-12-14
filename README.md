@@ -19,7 +19,7 @@ Docker](https://curriculeon.github.io/Curriculeon/lectures/containerization/dock
 7. [Install Jenkins Plugin - Maven Pipeline](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/install-plugin-maven-pipeline/content.html)
 8. [Jenkins Environment Configuration - Docker Integration](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/docker-integration/content.html)
 
-### Final Objective
+### Part 3 - Creating Pipeline
 1. [My First Maven Pipeline](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/docker-integration/content.html)
 	* Create a Jenkins pipeline which
 		1. `.jar`s [a Maven Application](https://github.com/curriculeon/jenkins.docker.maven_java-fundamentals)
@@ -27,3 +27,7 @@ Docker](https://curriculeon.github.io/Curriculeon/lectures/containerization/dock
 		3. runs junit tests and ignore failures on `.jar` in Docker Instance by leveraging command below
 			* `mvn -Dmaven.test.failure.ignore=true`
 		4. ensure output of build is displayed by Jenkins
+
+
+### Part 4 - Passing Test Cases and Triggering Pipeline
+1. [Java Developer Notes](./README-javadev.md)
