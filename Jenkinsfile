@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'maven:3-alpine'
+            args '-v $HOME/.m2:/root/.m2'
+        }
+    }
     tools {
         maven 'maven-3'
     }
@@ -13,7 +18,7 @@ pipeline {
     */
         stage ('Build') {
             steps {
-                sh 'mvn package -Dmaven.test.failure.ignore=true'
+                echo "hello"
             }
         }
     }
