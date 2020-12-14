@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
            image 'maven:3-alpine'
-           args '/c/Users/Wills/dev/jenkins.docker.maven_java-fundamentals/'
+           args '/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
 
          }
     }
