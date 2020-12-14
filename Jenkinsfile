@@ -4,18 +4,15 @@ pipeline {
         maven 'maven-3'
     }
     stages {
-        stage ('Initialize') {
+        stage ('SCM check') {
             steps {
-                sh '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-                '''
+                sh 'git clone https://github.com/willstopher817/jenkins.docker.maven_java-fundamentals.git'
             }
         }
 
         stage ('Build') {
             steps {
-                echo 'This is a minimal pipeline.'
+                sh 'mvn -Dmaven.test.failure.ignore=true'
             }
         }
     }
