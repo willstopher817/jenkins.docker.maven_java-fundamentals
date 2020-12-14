@@ -9,7 +9,7 @@ pipeline {
 
         stage ('SCM check') {
             steps {
-                sh 'git clone https://github.com/willstopher817/jenkins.docker.maven_java-fundamentals.git'
+                echo "hello"
             }
         }
 
