@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
            image 'maven:3-alpine'
-           args 'C:/Program Files (x86)/Jenkins/workspace/Third Pipline/'
+           args 'c:/program Files (x86)/jenkins/workspace/third pipline/'
         }
     }
 
