@@ -4,11 +4,6 @@
 3. [Install Maven](https://curriculeon.github.io/Curriculeon/lectures/java/build-automation/maven/installation/content.html)
 4. [Install
 Docker](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/installation/content.html)
-	* Installation of the following services:
-	* virtualbox
-	* docker-cli
-	* docker-machine
-	* docker-desktop
 5. [Install Docker (Windows 7)](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/installation-windows7/content.html)
 6. [Containerize a Jar](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/containerizing-jars/content.html)
 7. [SSH Into Docker Container](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/ssh-into-container/content.html)
