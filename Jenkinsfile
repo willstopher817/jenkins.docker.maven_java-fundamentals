@@ -1,5 +1,6 @@
 pipeline {
-    agent {
+    agent none
+    /*
         docker {
             image 'maven:3-alpine'
             //args '-v /root/.m2:/root/.m2'
@@ -7,7 +8,9 @@ pipeline {
             //args '-v $HOME/.m2:/root/.m2'
         }
     }
+    */
     stages {
+        /*
         stage('SCM Checkout') {
             steps {
                 sh 'git clone https://github.com/willstopher817/maven.java-fundamentals.git'
@@ -21,6 +24,17 @@ pipeline {
                     sh "${mvnHome}/bin/mvn/package"
                 }
             }
+        }
+        */
+        stage('Maven Install') {
+              agent {
+                docker {
+                  image 'maven:3.6.3'
+                }
+              }
+              steps {
+                sh 'mvn -Dmaven.test.failure.ignore=true'
+              }
         }
     }
 }
