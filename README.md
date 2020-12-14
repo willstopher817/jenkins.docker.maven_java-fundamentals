@@ -29,5 +29,8 @@ Docker](https://curriculeon.github.io/Curriculeon/lectures/containerization/dock
 		4. ensure output of build is displayed by Jenkins
 
 
-### Part 4 - Passing Test Cases and Triggering Pipeline
+### Part 4 - Passing Test Cases
 1. [Java Developer Notes](./README-javadev.md)
+
+
+### Part 5 - Triggering Pipeline With Passing Tests
