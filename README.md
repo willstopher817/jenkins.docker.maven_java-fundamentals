@@ -22,7 +22,7 @@ Docker](https://curriculeon.github.io/Curriculeon/lectures/containerization/dock
 ### Final Objective
 1. [My First Maven Pipeline](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/docker-integration/content.html)
 	* Create a Jenkins pipeline which
-		1. `.jar`s [a Maven Application](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/docker-integration/content.html)
+		1. `.jar`s [a Maven Application](https://github.com/curriculeon/jenkins.docker.maven_java-fundamentals)
 		2. containerizes `.jar` in a Docker Instance
 		3. runs junit tests and ignore failures on `.jar` in Docker Instance by leveraging command below
 			* `mvn -Dmaven.test.failure.ignore=true`
