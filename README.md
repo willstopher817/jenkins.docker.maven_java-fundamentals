@@ -9,8 +9,9 @@ Docker](https://curriculeon.github.io/Curriculeon/lectures/containerization/dock
 	* docker-cli
 	* docker-machine
 	* docker-desktop
-5. [Containerize a Jar](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/containerizing-jars/content.html)
-6. [SSH Into Docker Container](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/ssh-into-container/content.html)
+5. [Install Docker (Windows 7)](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/installation-windows7/content.html)
+6. [Containerize a Jar](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/containerizing-jars/content.html)
+7. [SSH Into Docker Container](https://curriculeon.github.io/Curriculeon/lectures/containerization/docker/ssh-into-container/content.html)
 
 
 ### Part 2 - Install And Configure Jenkins
