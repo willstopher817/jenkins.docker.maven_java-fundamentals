@@ -13,7 +13,7 @@ pipeline {
     */
         stage ('Build') {
             steps {
-               echo "hello"
+                sh 'mvn package -Dmaven.test.failure.ignore=true'
             }
         }
     }
