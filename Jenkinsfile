@@ -15,8 +15,8 @@ pipeline {
         stage('Compile-Package') {
             steps {
                 script {
-                    def mvnHome = tool name: 'maven-3', type: 'maven'
-                    sh "${mvnHome}/bin/mvn/package"
+                    def mvnHome = tool name: 'maven3.6.3', type: 'maven'
+                    sh "${mvnHome}/bin/mvn -Dmaven.test.failure.ignore=true "
                 }
             }
         }
