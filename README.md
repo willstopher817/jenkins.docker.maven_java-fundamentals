@@ -29,5 +29,5 @@ Docker](https://curriculeon.github.io/Curriculeon/lectures/containerization/dock
 		1. `.jar`s [a Maven Application](https://curriculeon.github.io/Curriculeon/lectures/ci-cd/jenkins/docker-integration/content.html)
 		2. containerizes `.jar` in a Docker Instance
 		3. runs junit tests and ignore failures on `.jar` in Docker Instance by leveraging command below
-			* `-Dmaven.test.failure.ignore=true`
+			* `mvn -Dmaven.test.failure.ignore=true`
 		4. ensure output of build is displayed by Jenkins
