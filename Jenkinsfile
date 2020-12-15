@@ -1,9 +1,10 @@
+
 node {
         stage("Main build") {
 
             checkout scm
 
-            docker.image('third-image').inside {
+            docker.image('maven:3-alpine').inside {
 
               stage("Install Bundler") {
                 echo "hello"
