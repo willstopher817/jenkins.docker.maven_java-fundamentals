@@ -9,8 +9,7 @@ pipeline {
         stage('SCM Checkout') {
             steps {
                 script {
-                    //sh 'https://github.com/willstopher817/jenkins.docker.maven_java-fundamentals.git'
-                    echo "hello"
+                    sh 'https://github.com/willstopher817/jenkins.docker.maven_java-fundamentals.git'
                 }
             }
         }
