@@ -8,17 +8,23 @@ pipeline {
     stages {
         stage('SCM Checkout') {
             steps {
-
-                     sh 'https://github.com/willstopher817/jenkins.docker.maven_java-fundamentals.git'
+            step {
+                            script {
+                                 sh 'https://github.com/willstopher817/jenkins.docker.maven_java-fundamentals.git'
+                            }
+            }
 
             }
         }
 
         stage('Compile-Package') {
             steps {
-
-                        def mvnHome = tool name: 'maven-3', type: 'maven'
-                        sh "${mvnHome}/bin/mvn/package"
+            step {
+                            script {
+                                    def mvnHome = tool name: 'maven-3', type: 'maven'
+                                    sh "${mvnHome}/bin/mvn/package"
+                            }
+            }
 
 
             }
