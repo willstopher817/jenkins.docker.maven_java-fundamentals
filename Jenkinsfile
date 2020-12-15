@@ -4,7 +4,7 @@ node {
 
             checkout scm
 
-            docker.image('maven-3').inside {
+            docker.image('third-container').inside {
 
               stage("Install Bundler") {
                 echo "hello"
