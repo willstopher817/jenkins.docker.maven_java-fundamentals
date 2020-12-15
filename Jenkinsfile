@@ -1,24 +1,27 @@
-
-node {
-        stage("Main build") {
-
-            checkout scm
-
-            docker.image('third-container').inside {
-
-              stage("Install Bundler") {
-                echo "hello"
-              }
-
-              stage("Use Bundler to install dependencies") {
-                 sh 'https://github.com/willstopher817/jenkins.docker.maven_java-fundamentals.git'
-              }
-
-              stage("Build package") {
-                def mvnHome = tool name: 'maven-3', type: 'maven'
-                sh "${mvnHome}/bin/mvn/package"
-              }
-           }
-
+pipeline {
+    agent {
+        docker {
+            image 'maven:3-alpine'
+            args '-v /root/.m2:/root/.m2'
         }
+    }
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                script {
+                    sh 'https://github.com/willstopher817/jenkins.docker.maven_java-fundamentals.git'
+                }
+            }
+        }
+
+        stage('Compile-Package') {
+            steps {
+                script {
+                    def mvnHome = tool name: 'maven-3', type: 'maven'
+                    sh "${mvnHome}/bin/mvn/package"
+                }
+
+            }
+        }
+    }
 }
