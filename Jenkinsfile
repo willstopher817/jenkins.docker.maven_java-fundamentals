@@ -1,10 +1,23 @@
+node {
+        stage("Main build") {
 
-timestamps {
-    node('docker') {
-      stage 'Python Build'
+            checkout scm
 
-      withDockerContainer('python') {
-        sh 'python --version'
-      }
-    }
+            docker.image('third-image').inside {
+
+              stage("Install Bundler") {
+                echo "hello"
+              }
+
+              stage("Use Bundler to install dependencies") {
+                 sh 'https://github.com/willstopher817/jenkins.docker.maven_java-fundamentals.git'
+              }
+
+              stage("Build package") {
+                def mvnHome = tool name: 'maven-3', type: 'maven'
+                sh "${mvnHome}/bin/mvn/package"
+              }
+           }
+
+        }
 }
