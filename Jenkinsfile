@@ -1,22 +1,21 @@
 pipeline {
     agent {
         docker {
-           image 'maven:3-alpine'
-           args '/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-
-         }
+            image 'maven:3-alpine' 
+            args '-v /root/.m2:/root/.m2' 
+        }
     }
-
     stages {
-        stage ('SCM check') {
+        stage('SCM Checkout') {
             steps {
-                echo "hello"
+                sh 'git clone https://github.com/curriculeon-student/maven.java-fundamentals'
             }
         }
 
-        stage ('Build') {
+        stage('Compile-Package') {
             steps {
-                echo "hello"
+                def mvnHome = tool name: 'maven-3', type: 'maven'
+                sh "${mvnHome}/bin/mvn/package"
             }
         }
     }
