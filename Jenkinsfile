@@ -9,7 +9,7 @@ pipeline {
         stage('Set Up') {
             steps {
                 script {
-                    sh 'rm -rf maven.java-fundamentals'
+                    sh 'rm -rf jenkins.docker.maven_java-fundamentals.git'
                 }
             }
         }
