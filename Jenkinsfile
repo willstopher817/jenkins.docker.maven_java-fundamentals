@@ -9,7 +9,7 @@ pipeline {
         stage('Set Up') {
             steps {
                 script {
-                    sh 'rm -rf jenkins.docker.maven_java-fundamentals.git'
+                    sh 'rm -rf jenkins.docker.maven_java-fundamentals'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
         stage('Compile-Package-Test') {
             steps {
                 script {
-                    dir('$PWD/maven.java-fundamentals') {
+                    dir('$PWD/jenkins.docker.maven_java-fundamentals') {
                         sh "mvn package -Dmaven.test.failure.ignore=true"
                     }
                 }
